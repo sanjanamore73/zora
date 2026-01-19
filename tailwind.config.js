@@ -9,8 +9,8 @@ export default {
       colors: {
         primary: "#00ffcc",
         secondary: "#7000ff",
-        dark: "#0a0a0a",
-        card: "#161616",
+        dark: "#ffffff",
+        card: "#f5f5f5",
       },
     },
   },

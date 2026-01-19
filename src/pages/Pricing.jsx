@@ -66,7 +66,7 @@ const Pricing = () => {
           Simple, <span className="text-primary">Transparent</span> Pricing
         </motion.h1>
         <motion.p
-          className="text-xl text-gray-400 mb-8"
+          className="text-xl text-gray-600 mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
@@ -81,7 +81,7 @@ const Pricing = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <span className={isAnnual ? 'text-gray-400' : 'text-white font-bold'}>Monthly</span>
+          <span className={isAnnual ? 'text-gray-600' : 'text-gray-900 font-bold'}>Monthly</span>
           <button
             onClick={() => setIsAnnual(!isAnnual)}
             className="bg-primary/20 border border-primary/50 rounded-full p-1 w-16 flex items-center transition-all"
@@ -92,7 +92,7 @@ const Pricing = () => {
               animate={{ x: isAnnual ? 32 : 0 }}
             />
           </button>
-          <span className={!isAnnual ? 'text-gray-400' : 'text-white font-bold'}>Annual (Save 20%)</span>
+          <span className={!isAnnual ? 'text-gray-600' : 'text-gray-900 font-bold'}>Annual (Save 20%)</span>
         </motion.div>
       </section>
 
@@ -109,8 +109,8 @@ const Pricing = () => {
               key={idx}
               className={`rounded-2xl p-8 relative transition-all ${
                 plan.highlighted
-                  ? 'glass-card border-2 border-primary bg-primary/5 transform md:scale-105'
-                  : 'glass-card'
+                  ? 'glass-card border-2 border-primary bg-primary/5 transform md:scale-105 text-gray-800'
+                  : 'glass-card text-gray-800'
               }`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -182,7 +182,7 @@ const Pricing = () => {
           ].map((faq, idx) => (
             <motion.div
               key={idx}
-              className="glass-card p-6 rounded-xl"
+              className="glass-card p-6 rounded-xl text-gray-800"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

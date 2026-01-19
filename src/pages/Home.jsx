@@ -46,7 +46,7 @@ const Home = () => {
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
+            className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto"
             variants={itemVariants}
           >
             Unlock your earning potential with AI-powered strategies and real-time market insights
@@ -86,7 +86,7 @@ const Home = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Choose ZORA?</h2>
-          <p className="text-gray-400 text-lg">Advanced tools built for modern earners</p>
+          <p className="text-gray-600 text-lg">Advanced tools built for modern earners</p>
         </motion.div>
 
         <motion.div
@@ -115,13 +115,13 @@ const Home = () => {
           ].map((feature, idx) => (
             <motion.div
               key={idx}
-              className="glass-card p-8 rounded-2xl hover:border-primary/50 transition-all"
+              className="glass-card p-8 rounded-2xl hover:border-primary/50 transition-all text-gray-800"
               variants={itemVariants}
               whileHover={{ y: -10 }}
             >
               <div className="text-primary mb-4">{feature.icon}</div>
               <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
-              <p className="text-gray-400">{feature.desc}</p>
+              <p className="text-gray-600">{feature.desc}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -136,7 +136,7 @@ const Home = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold mb-6">Join 50,000+ Successful Earners</h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             Start your journey to financial freedom today
           </p>
           <Link to="/pricing">

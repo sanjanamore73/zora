@@ -53,7 +53,7 @@ const Services = () => {
           Our <span className="text-primary">Services</span>
         </motion.h1>
         <motion.p
-          className="text-xl text-gray-400 max-w-2xl mx-auto px-4"
+          className="text-xl text-gray-600 max-w-2xl mx-auto px-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
@@ -73,21 +73,21 @@ const Services = () => {
           {services.map((service, idx) => (
             <motion.div
               key={idx}
-              className="glass-card p-8 rounded-2xl hover:border-primary/50 transition-all group"
+              className="glass-card p-8 rounded-2xl hover:border-primary/50 transition-all group text-gray-800"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
               whileHover={{ y: -10 }}
             >
-              <div className="text-primary mb-4 group-hover:text-white transition-colors">
+              <div className="text-primary mb-4 group-hover:text-primary transition-colors">
                 {service.icon}
               </div>
               <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
-              <p className="text-gray-400 mb-6">{service.desc}</p>
+              <p className="text-gray-600 mb-6">{service.desc}</p>
               <ul className="space-y-2">
                 {service.features.map((feature, i) => (
-                  <li key={i} className="flex items-center text-gray-300 text-sm">
+                  <li key={i} className="flex items-center text-gray-700 text-sm">
                     <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></span>
                     {feature}
                   </li>
@@ -107,7 +107,7 @@ const Services = () => {
           className="bg-gradient-to-r from-primary/10 to-secondary/10 p-12 rounded-3xl max-w-3xl mx-auto"
         >
           <h2 className="text-3xl font-bold mb-4">Ready to get started?</h2>
-          <p className="text-gray-300 mb-6">
+          <p className="text-gray-600 mb-6">
             Join thousands of successful traders using ZORA
           </p>
           <motion.button
